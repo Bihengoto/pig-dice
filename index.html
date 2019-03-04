@@ -8,7 +8,51 @@
     <link rel="icon" href="img/icon.jpg" />
   </head>
   <body>
-    <!-- jquery code -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pig Dice Game</h1>
+        <p>Welcome to Pig Dice Game, A ONE on ONE game</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/dice1.jpg" alt="DICE IMAGE" />
+          <p>
+            Kindly, <strong>Fill In</strong> your names in the
+            <strong>Form on your right</strong> to begin the game
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <form id="registerIn" action="index.html" method="post">
+              <div class="form-group">
+                <label for="name"> Player A</label>
+                <input
+                  id="playerA"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter First Player Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Player B</label>
+                <input
+                  id="playerB"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Second Player Name"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-warning" name="button">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery Link -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

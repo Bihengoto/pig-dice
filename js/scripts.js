@@ -65,4 +65,18 @@ $(document).ready(function() {
     gamerA.gamerName = gamerAname;
     gamerB.gamerName = gamerBname;
   });
+  $("button#new-game").click(function(event) {
+    $(".back-page").hide();
+    clearValues();
+    gamerA.newGame();
+    gamerB.newGame();
+    $("#totalRound").empty();
+    $("#total").empty();
+    $("#rollDice").empty();
+    $("#totalRoundB").empty();
+    $("#totalB").empty();
+    $("#rollDiceB").empty();
+
+    $(".userA").show();
+  });
 });

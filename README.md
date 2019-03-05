@@ -23,3 +23,17 @@ jQuery.
 HTML.
 CSS
 Bootstrap.
+
+## BDD.
+
+| Actions.                                              | Expectations.                                                                     |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------- |
+| When the name is filled in the field text.            | It's accepted and saved to the game, the players can also decide to be anonymous. |
+| On click start button.                                | The game identifies players by name to begin the game.                            |
+| On click Roll.                                        | The dice roll while saving the round total.                                       |
+| On click Hold.                                        | The game alerts that your turn is over.                                           |
+| On click ok button.                                   | The score is saved before the next player plays.                                  |
+| If the total of any of the players hit 100 or exceed. | The player is then declared winner.                                               |
+| On click OK button.                                   | The total score is displayed.                                                     |
+| On click the New game button.                         | It takes back the player save the new data i.e name.                              |
+| On click start button.                                | The new game begins.                                                              |

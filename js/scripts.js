@@ -79,4 +79,16 @@ $(document).ready(function() {
 
     $(".userA").show();
   });
+  $("button#rollGamerA").click(function(event) {
+    gamerA.roll = tossDice();
+    $("#rollDice").text(gamerA.roll);
+    gamerA.rollone();
+    $("#totalRound").text(gamerA.tempscore);
+  });
+  $("button#rollGamerB").click(function(event) {
+    gamerB.roll = tossDice();
+    $("#rollDiceB").text(gamerB.roll);
+    gamerB.rollone();
+    $("#totalRoundB").text(gamerB.tempscore);
+  });
 });

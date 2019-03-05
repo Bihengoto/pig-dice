@@ -91,4 +91,19 @@ $(document).ready(function() {
     gamerB.rollone();
     $("#totalRoundB").text(gamerB.tempscore);
   });
+  $("button#holdGamerA").click(function(event) {
+    gamerA.hold();
+    $("#total").text(gamerA.totalscore);
+    $("#totalRound").empty();
+    $("#rollDice").empty();
+    gamerA.winnerCheck();
+  });
+
+  $("button#holdGamerB").click(function(event) {
+    gamerB.hold();
+    $("#totalB").text(gamerB.totalscore);
+    $("#totalRoundB").empty();
+    $("#rollDiceB").empty();
+    gamerB.winnerCheck();
+  });
 });

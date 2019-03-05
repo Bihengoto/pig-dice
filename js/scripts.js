@@ -13,3 +13,32 @@ function Gamer(turn) {
   this.turn = turn;
   this.gamerName;
 }
+
+Gamer.prototype.rollone = function() {
+  if (this.roll === 1) {
+    this.tempscore = 0;
+    alert("Sorry " + this.gamerName + ", you rolled a 1!! Your Game is over!");
+  } else {
+    this.tempscore += this.roll;
+  }
+};
+
+Gamer.prototype.hold = function() {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
+
+  alert(this.gamerName + ", your turn is over, pass the mouse!");
+};
+
+Gamer.prototype.winnerCheck = function() {
+  if (this.totalscore >= 100) {
+    alert(this.gamerName + " You are the winner!");
+  }
+};
+
+Gamer.prototype.newGame = function() {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.gamerName = "";
+};

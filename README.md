@@ -37,3 +37,18 @@ Bootstrap.
 | On click OK button.                                   | The total score is displayed.                                                     |
 | On click the New game button.                         | It takes back the player save the new data i.e name.                              |
 | On click start button.                                | The new game begins.                                                              |
+
+## Installation requirements
+
+Web browser.
+Internet connection Offline copy available if you fork and save in your computer as a file.
+
+## You can view active website here
+
+## Support and contact details
+
+contact me through isaacbihengoto@gmail.com or +254 708 437 712
+
+### License
+
+Copyright (c) year:2019 isaac mahugu.

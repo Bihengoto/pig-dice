@@ -47,3 +47,22 @@ var clearValues = function() {
   $(".gamerAname").val("");
   $(".gamerBname").val("");
 };
+
+// User Interface
+$(document).ready(function() {
+  $("button#begin").click(function(event) {
+    gamerA = new Gamer(true);
+    gamerB = new Gamer(false);
+    $("#userB").show();
+    $("#userA").hide();
+
+    var gamerAname = $(".gamerAname").val();
+    $("#gamerAname").text(gamerAname);
+
+    var gamerBname = $(".gamerBname").val();
+    $("#gamerBname").text(gamerBname);
+
+    gamerA.gamerName = gamerAname;
+    gamerB.gamerName = gamerBname;
+  });
+});

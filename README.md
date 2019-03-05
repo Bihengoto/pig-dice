@@ -43,7 +43,7 @@ Bootstrap.
 Web browser.
 Internet connection Offline copy available if you fork and save in your computer as a file.
 
-## You can view active website here
+## You can view active website here https://bihengoto.github.io/pig-dice/
 
 ## Support and contact details
 

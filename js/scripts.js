@@ -42,3 +42,8 @@ Gamer.prototype.newGame = function() {
   this.totalscore = 0;
   this.gamerName = "";
 };
+
+var clearValues = function() {
+  $(".gamerAname").val("");
+  $(".gamerBname").val("");
+};

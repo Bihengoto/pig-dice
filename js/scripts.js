@@ -1,11 +1,7 @@
-$(document).ready(function() {
-  $("form#registerIn").submit(function(event) {
-    event.preventDefault();
-    $("#start").hide();
-    $("#overall").show();
-    var playerA = $("#nameA").val();
-    var playerB = $("#nameB").val();
-    $("#namesA").text(playerA);
-    $("#namesB").text(playerB);
-  });
-});
+//business logic
+var gamerA = "";
+var gamerB = "";
+
+var tossDice = function() {
+  return Math.floor(6 * Math.random()) + 1;
+};

@@ -13,7 +13,7 @@
         <h1>Pig Dice Game</h1>
         <p>Welcome to Pig Dice Game, A ONE on ONE game</p>
       </div>
-      <div id="start">
+      <div id="userA">
         <div class="row">
           <div class="col-md-6">
             <img src="img/dice1.jpg" alt="DICE IMAGE" />
@@ -23,76 +23,70 @@
             </p>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
-              <form id="registerIn" action="index.html" method="post">
-                <div class="form-group">
-                  <label for="name"> Player A</label>
-                  <input
-                    id="nameA"
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter First Player Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="name">Player B</label>
-                  <input
-                    id="nameB"
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter Second Player Name"
-                    required
-                  />
-                </div>
-                <button type="submit" class="btn btn-warning" name="button">
-                  Submit
-                </button>
-              </form>
-            </div>
+            <form id="gamer-A">
+              <div class="form-group">
+                <label for="gamerAname"> Gamer A</label>
+                <input
+                  type="text"
+                  class="gamerAname form-control"
+                  placeholder="Enter First Gamer Name"
+                  required
+                />
+              </div>
+            </form>
+            <form id="gamer-B">
+              <div class="form-group">
+                <label for="gamerBname">Gamer B</label>
+                <input
+                  type="text"
+                  class="gamerBname form-control"
+                  placeholder="Enter Second Gamer Name"
+                  required
+                />
+              </div>
+            </form>
+            <button id="begin" class="btn btn-primary">BEGIN</button>
+            <buton id="reset" class="btn-success btn">REFRESH</buton>
           </div>
         </div>
       </div>
-      <div id="overall">
+      <div id="userB">
+        <button id="new-game" class="btn-success btn">NEW GAME</button>
+        <br /><br />
         <div class="row">
           <div class="col-sm-6">
-            <div class="form-group">
-              <div class="panel panel-info">
-                <div class="panel-heading">
-                  <p class="panel-title">Player A</p>
-                </div>
-                <div class="panel-body">
-                  <h2>Player A: <span id="namesA"></span></h2>
-                  <button id="player1-roll" class="btn-danger btn">Roll</button>
-                  <button id="player1-hold" class="btn-primary btn">
-                    Hold
-                  </button>
-                  <h4>Dice Roll: <span id="die-roll-1"></span></h4>
-                  <p>Round Total: <span id="round-total-1"></span></p>
-                </div>
-                <div class="panel-footer">
-                  <p>Total Score: <span id="total-score-1"></span></p>
-                </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <p class="panel-title">Gamer A</p>
+              </div>
+              <div class="panel-body">
+                <h2>Gamer A: <span id="gamerAname"></span></h2>
+                <button id="rollGamerA" class="btn-danger btn">Roll</button>
+                <button id="holdGamerA" class="btn-primary btn">Hold</button>
+                <h2>Dice Roll: <span id="rollDice"></span></h2>
+                <p>Total Round: <span id="totalRound"></span></p>
+              </div>
+              <div class="panel-footer">
+                <p>Total Score: <span id="total"></span></p>
               </div>
             </div>
           </div>
+
           <div class="col-sm-6">
             <div class="form-group">
               <div class="panel panel-info">
                 <div class="panel-heading">
-                  <p class="panel-title">Player B</p>
+                  <p class="panel-title">Gamer B</p>
                 </div>
                 <div class="panel-body">
-                  <h2>Player B: <span id="namesB"></span></h2>
-                  <button id="player1-roll" class="btn-danger btn">Roll</button>
-                  <button id="player1-hold" class="btn-primary btn">
-                    Hold
-                  </button>
-                  <h4>Dice Roll: <span id="die-roll-1"></span></h4>
-                  <p>Round Total: <span id="round-total-1"></span></p>
+                  <h2>Gamer 2: <span id="gamerBname"></span></h2>
+                  <button id="rollGamerB" class="btn-danger btn">Roll</button>
+                  <button id="holdGamerB" class="btn-primary btn">Hold</button>
+                  <h4>Dice Roll: <span id="rollDiceB"></span></h4>
+                  <p>Round Total: <span id="totalRoundB"></span></p>
                 </div>
                 <div class="panel-footer">
-                  <p>Total Score: <span id="total-score-1"></span></p>
+                  <p>Total Score: <span id="totalB"></span></p>
                 </div>
               </div>
             </div>
@@ -100,7 +94,7 @@
         </div>
       </div>
     </div>
-    <!-- jquery Link -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
